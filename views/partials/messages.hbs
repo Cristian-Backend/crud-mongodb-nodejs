@@ -1,0 +1,20 @@
+{{#if success_msg}} {{!-- Si existe el succes_msg quioero que me envies una alerta, La variable esta definida en el archivo server --}}
+<div class="alert alert-success alert-dimissible fade show" role="alert">
+    {{success_msg}}
+
+<button type="button" class="close"  data-bs-dismiss="alert"  aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+</button>
+</div>
+{{/if}}
+
+
+{{#if error_msg}} {{!-- Si existe el succes_msg quioero que me envies una alerta, La variable esta definida en el archivo server --}}
+<div class="alert alert-danger alert-dimissible fade show" role="alert">
+    {{error_msg}}
+
+<button type="button" class="close"  data-bs-dismiss="alert"  aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+</button>
+</div>
+{{/if}}

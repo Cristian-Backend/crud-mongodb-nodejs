@@ -1,0 +1,23 @@
+{{#if error}} {{!-- Error de passport --}}
+
+<div class="alert alert-danger alert-dimissible fade show" role="alert">
+    {{error}} 
+
+<button type="button" class="close"  data-bs-dismiss="alert"  aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+</button>
+
+</div>
+
+{{/if}}
+
+
+{{#each errors}}
+<div class="alert alert-danger alert-dimissible fade show" role="alert">
+    {{text}} {{!-- El texto del error que estan en el array de controlers users, Los recorre. --}}
+
+<button type="button" class="close"  data-bs-dismiss="alert"  aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+</button>
+</div>
+{{/each}}
